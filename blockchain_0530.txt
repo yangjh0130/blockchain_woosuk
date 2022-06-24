@@ -1,0 +1,26 @@
+# 1. chocolatey 설치
+
+- chocolatey : 윈도우 패키지 관리 프로그램 (linux yum, apt-get)
+- 주소 접속 (https://chocolatey.org/install#individual)
+- powershell에 1-2 코드 입력
+  Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
+- choco 입력해서 설치 확인
+
+
+# 2. git 설치
+
+- choco install git
+- git
+
+# 3. git 활용
+
+- git 설치가 완료되었으면 우클릭 했을 때 git 메뉴가 추가됨
+- git bash here 누르면 cmd처럼 작업할 수 있음
+
+
+# 4. git 명령어 정리
+
+- dir		// 디렉토리 내 폴더 및 파일 확인
+- git init		// git 저장소 생성
+- git config --global user.email "yangjh0130@naver.com"
+- git config --global user.name "yangjh0130"
