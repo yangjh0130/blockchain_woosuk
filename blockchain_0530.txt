@@ -45,3 +45,5 @@ Note에 내용 입력 - Expiration(키 만료 날짜 설정) - repo만 체크 - 
 - git add blockchain_0530.txt					// 수정한 파일 add
 - git commit -m "0530 정리"					// 0530 정리 이름으로 commit
 - git push							// 원격 저장소로 전송
+
+- add -> commit -> push
