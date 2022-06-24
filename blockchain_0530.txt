@@ -12,12 +12,19 @@
 - choco install git
 - git
 
-# 3. git 활용
+
+# 3. vscode 설치
+
+- choco install vscode
+- choco install vscode -y (테스트 필요)
+
+
+# 4. git 활용
 
 - git 설치가 완료되었으면 우클릭 했을 때 git 메뉴가 추가됨
 - git bash here 누르면 cmd처럼 작업할 수 있음
 
-# 4. 저장소 및 토큰 생성
+# 5. 저장소 및 토큰 생성
 
 - 저장소 생성
 메인화면 - Repositories - New - Respsitory name 설정 후 Create repository
@@ -27,7 +34,7 @@
 Note에 내용 입력 - Expiration(키 만료 날짜 설정) - repo만 체크 - Generate token
 !! 토큰 키는 따로 복사해서 저장 !!
 
-# 5. git 명령어 정리
+# 6. git 명령어 정리
 
 - dir		// 디렉토리 내 폴더 및 파일 확인
 - git init		// git 저장소 생성
@@ -46,4 +53,6 @@ Note에 내용 입력 - Expiration(키 만료 날짜 설정) - repo만 체크 - 
 - git commit -m "0530 정리"					// 0530 정리 이름으로 commit
 - git push							// 원격 저장소로 전송
 
-- add -> commit -> push
+- init -> 사용자 설정 -> add -> commit -> 원격 저장소 연결 -> 브랜치 설정 -> push
+- 파일 수정 시 add -> commit -> push
+- log와 status로 확인
