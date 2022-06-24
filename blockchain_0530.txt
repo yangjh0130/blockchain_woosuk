@@ -58,3 +58,4 @@ Note에 내용 입력 - Expiration(키 만료 날짜 설정) - repo만 체크 - 
 - init -> 사용자 설정 -> add -> commit -> 원격 저장소 연결 -> 브랜치 설정 -> push
 - 파일 수정 시 add -> commit -> push
 - log와 status로 확인
+
