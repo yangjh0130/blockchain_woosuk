@@ -22,5 +22,9 @@
 
 - dir		// 디렉토리 내 폴더 및 파일 확인
 - git init		// git 저장소 생성
-- git config --global user.email "yangjh0130@naver.com"
-- git config --global user.name "yangjh0130"
+- git config --global user.email "yangjh0130@naver.com"		// 사용자 이메일 설정
+- git config --global user.name "yangjh0130"			// 사용자 이름 설정
+- git add blockchain_0530.txt				// 파일 추적 시작
+- git commit -m blockchain_0530.txt				// 코드 변화 기록
+- git log							// commit된 스냅샷 표시
+- git status 						
