@@ -13,10 +13,16 @@
 - git
 
 
-# 3. vscode 설치
+# 3. vscode 설치 및 사용
 
 - choco install vscode
 - choco install vscode -y (테스트 필요)
+
+- 폴더 설정 후 파일 수정 시 소스 제어에 수정된 파일 탐지
+- 소스 제어 변경 사항에서 + 버튼 눌러서 add
+- add 누르면 스테이징된 변경 사항에 파일이 올라감
+- 맨 위 메시지 작성 후 v 버튼 눌러서 commit
+- commit 하면 맨 아래 push 가능한 commit 수가 나오고 버튼을 누르면 push 진행
 
 
 # 4. git 활용
