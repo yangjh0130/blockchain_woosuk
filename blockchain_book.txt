@@ -47,3 +47,34 @@
 
 
 # 2.2
+
+- id : 식별되는 객체의 DID
+ . ex) 사용자 식별 위한 DID -> id : 사용자, 물건 식별 위한 DID -> id : 물건
+
+- publicKey : 인증에 필요한 다양한 종류의 데이터
+ . 예제에서는 RSA 인증 방식과 생체 인증 방식을 사용할 수 있는 데이터
+ . publicKey 항목에는 id, type, controller, publicKeyPem 세부 항목이 존재함
+  .. id : publicKey 내 사용할 수 있는 인증키의 위치를 나타냄
+  .. type : 비대칭키 인증(RSA), 생체 인증, 타원곡선 비대칭키 인증 등 다양한 인증 방식이 들어갈 수 있음
+  .. controller : publicKeyPem에 대한 인증 권한을 가진 사람 (공개키가 저장 되어있으므로 해당 공개키와 쌍을 이루는 비밀키를 가진 사람의 DID)
+  .. publicKeyPem : 소유권 인증에 사용될 데이터 저장 (비대칭키 사용 -> 공개키)
+
+- authentication : DID document가 제공하는 소유권 인증 방식을 나타냄
+ . 각각 publicKey의 id값을 나타냄
+ . 여러가지 방법 중 선택하여 DID 소유권에 대한 인증을 수행할 수 있음
+
+- service : serviceEndpoint라는 세부 항목을 이용해 다양한 서비스 개발 가능
+ . service 항목의 값을 참조하여 자격증 발행기관 주소를 찾음
+
+- @context : DID document에 들어가는 id, publicKey, service, controller 등의 항목이 어떤 의미를 가지는 데이터인지, 어떤 종류의 데이터가 들어가야 하는지 명확하게 정의
+
+- @context 이해를 위해 @context, @id, @type 정리
+ . @context : key-value 구조의 key값에 어떠한 데이터가 들어가는지 정의 (http://schema.org : key 값에 많이 쓰이는 단어들에 대해 value값으로 어떤 값들이 들어가는지 공식적으로 제공)
+ . @id : key값으로 사용될 때와 value값으로 사용될 때 용도가 다름
+  .. key값 : IRI(URI보다 개선된 식별자)가 들어가야 함
+  .. value값 : IRI 주소값을 입력할 것이라는 의미
+ . @type : image 양식에 따라 어떤 방식으로 그림 파일을 입력할지 명시
+ . @conetxt는 직접 정의할 수 있음, 또한 @context가 정의된 IRI를 입력할 수도 있음
+
+- "sec" = "https://w3id.org/security#",
+ . sec:controller => https://w3id.org/security#controller 의미
