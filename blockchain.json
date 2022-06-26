@@ -1,0 +1,30 @@
+{
+    "@context" : "https://www.w3.org/ns/did/v1",
+    "id" : "did:ethr:1234",
+    "publicKey" : [{
+        "id" : "did:ethr:1234#keys-1",
+        "type" : "RsaVerificationKey2018",
+        "controller" : "did:ethr:1234",
+        "publicKeyPem" : "-----BEGIN PUBLIC KEY...END PUBLIC KEY-----\r\n"
+    }, {
+        "id" : "did:ethr:1234#keys-2",
+        "type" : "Ieee2410VerificationKey2018",
+        "controller" : "did:ethr:1234",
+        "publicKeyPem" : "-----BEGIN PUBLIC KEY...END PUBLIC KEY-----\r\n"
+    }, {
+        "id" : "did:ethr:1234#keys-3",
+        "type" : "RsaVerificationKey2018",
+        "controller" : "did:sov:ABCD",
+        "publicKeyPem" : "-----BEGIN PUBLIC KEY...END PUBLIC KEY-----\r\n"
+    }],
+    "authentication" : [
+        "did:ethr:1234#keys-1",
+        "did:ethr:1234#keys-2",
+        "did:ethr:1234#keys-3"
+    ],
+    "service" : [{
+        "id" : "did:ethr:1234#keyRotation",
+        "type" : "RotateUserKey",
+        "serviceEndpoint" : "https://example.com/keyrotation/"
+    }]
+}
