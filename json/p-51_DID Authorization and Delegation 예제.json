@@ -1,0 +1,9 @@
+{
+    "@context" : "https://www.w3.org/ns/did/v1",
+    "id" : "did:bc1:1234",
+    "controller" : "did:ethr:1234",
+    "service" : [{
+        "type" : "VerifiableCredentialService",
+        "serviceEndpoint" : "https://example.com/certificate/"
+    }]
+}
