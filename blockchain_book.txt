@@ -33,3 +33,17 @@
 
 # 2.1
 
+- DID document : 인증 수단
+
+- DID는 DID scheme, DID method, Method-specific identifier로 구성
+ . DID scheme : URI가 어떤 프로토콜을 사용하는지 명시
+ . DID method : DID document가 어떤 저장소에 저장되어 있는지 보여줌
+ . Method-specific identifier : DID document가 저장된 정확한 위치 검색
+
+- did:btcr:aaaa-bbbb-ccc
+ . did : DID(URI) scheme
+ . btcr : DID method, DID가 저장된 저장소 이름
+ . aaaa-bbbb-ccc : Method-specific identifier, btcr 저장소 내 DID document가 저장된 주소
+
+
+# 2.2
