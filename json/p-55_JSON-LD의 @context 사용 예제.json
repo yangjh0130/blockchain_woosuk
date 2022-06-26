@@ -1,0 +1,16 @@
+{
+    "@context" : {
+        "name" : "https://www.w3.org/ns/did/v1",
+        "image" : {
+            "@id" : "http://schema.org/image",
+            "@type" : "@id"
+        },
+    "homepage" : {
+        "@id" : "http://schema.org/url",
+        "@type" : "@id"
+    }
+},
+    "name" : "YOON DAEGEUN",
+    "image" : "https://www.example.com/myImage",
+    "homepage" : "https://www.example.com"
+}
