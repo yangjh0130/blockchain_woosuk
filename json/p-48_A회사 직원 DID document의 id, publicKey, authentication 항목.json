@@ -1,0 +1,12 @@
+...
+    "id" : "did:sov:1234",
+    "publicKey" : [{
+        "id" : "did:sov:1234#keys-1",
+        "type" : "RsaVerificationKey2018",
+        "controller" : "did:sov:ABCD",
+        "publicKeyPem" : "-----BEGIN PUBLIC KEY...END PUBLIC KEY-----\r\n"
+    }],
+    "authentication" : [
+        "did:sov:1234#keys-1"
+    ],
+...
