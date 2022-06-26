@@ -1,0 +1,22 @@
+...
+    "publicKey" : [{
+        "id" : "did:bc1:1234#keys-1",
+        "type" : "RsaVerificationKey2018",
+        "controller" : "did:bc1:1234",
+        "publicKeyPem" : "-----BEGIN PUBLIC KEY...END PUBLIC KEY-----\r\n"
+    }, {
+        "id" : "did:bc1:1234#keys-2",
+        "type" : "RsaVerificationKey2018",
+        "controller" : "did:bc1:ABCD",
+        "publicKeyPem" : "-----BEGIN PUBLIC KEY...END PUBLIC KEY-----\r\n"
+    }],
+    "authentication" : [
+        "did:bc1:1234#keys-1",
+        "did:bc2:1234#keys-2"
+    ],
+    "service" : [{
+        "id" : "did:bc1:1234#keyRotation",
+        "type" : "RotateUserKey",
+        "serviceEndpoint" : "https://example.com/keyrotation/"
+    }]
+}

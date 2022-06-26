@@ -1,0 +1,16 @@
+...
+"id" : "did:sov:1234",
+"publicKey" : [{
+    "id" : "did:sov:1234#keys-1",
+    "type" : "RsaVerificationKey2018",
+    "controller" : "did: sov:1234",
+    "publicKeyPem" : "-----BEGIN PUBLIC KEY...END PUBLIC KEY-----\r\n"
+}],
+"authentication" : [
+    "did:sov:1234#keys-1"
+],
+"service" : [{
+    "id" : "did:sov:1234#EmployeeAuth",
+    "type" : "CompanyEmployeeAuth",
+    "serviceEndpoint" : "https://company.com/employeeauthentication/"
+}]
