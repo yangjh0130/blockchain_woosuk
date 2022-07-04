@@ -40,7 +40,7 @@
   . Ubuntu 18.04 desktop 버전으로 설치 (원본 : 16.04)
   . Provider에서 virtualbox 선택
   . 검색한 뒤 내용 수정
-  . https://app.vagrantup.com/jpiel/boxes/ubuntu16.04-desktop 로 설치함 (원본 : https://app.vagrantup.com/bstoots/boxes/xubuntu-16.04-desktop-amd64)
+  . https://app.vagrantup.com/jpiel/boxes/ubuntu16.04-desktop 로 설치함
 
 4. Powershell에 명령어 입력
  - vagrant up
@@ -60,7 +60,7 @@
 
 $ sudo apt-get install ca-certificates -y
 $ sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys CE7709D068DB5E88
-$ sudo add-apt-repository "deb https://repo.sovrin.org/sdk/deb bionic stable" (원본 : sudo add-apt-repository "deb https://repo.sovrin.org/sdk/deb xenial stable")
+$ sudo add-apt-repository "deb https://repo.sovrin.org/sdk/deb xenial stable"
  - release channel은 master, rc, stable이 있음
   . master는 마스터 분기의 각 푸시에 대한 개발 빌드, rc는 후보 release, stable은 안정적인 release로 생각
   . stable로 설치 진행
@@ -73,3 +73,4 @@ $ sudo apt-get update
 $ sudo apt-get install libindy -y
 
 - Ubuntu 16.04 버전에서는 설치가 잘 진행되지만 18.04에서는 libsodium18, 20.04에서는 (xenial|bionic) 부분에서 에러 발생
+
